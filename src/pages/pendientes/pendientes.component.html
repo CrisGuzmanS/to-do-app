@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-title>Pendientes</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+
+  <img src="../../assets/imgs/headers/pendientes.gif" alt="">
+
+  <app-listas [terminada]="false"></app-listas>
+
+  <ion-fab bottom right>
+    <button ion-fab (click)="agregarLista()">
+      <ion-icon name="add"></ion-icon>
+    </button>
+  </ion-fab>
+
+</ion-content>
